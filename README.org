@@ -1,0 +1,10 @@
+* my emacs config
+
+** overviewh
+This readme is just for fun!
+
+README test with org-mode
+
+* TODO this is a task [1/2]
+  - [X] this is subtask1
+  - [ ] this is subtask2
