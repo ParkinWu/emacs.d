@@ -6,6 +6,7 @@
 (require 'init-elpa)
 (require 'init-packages)
 (require 'init-ui)
+(require 'init-rust)
 
 (when (file-exists-p custom-file)
   (load-file custom-file))

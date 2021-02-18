@@ -1,13 +1,15 @@
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(font-use-system-font t)
  '(package-selected-packages
-   '(jupyter lsp-mode ace-window ivy-posframe ivy-postframe-display-functions-alist which-key flycheck fly-check company counsel ivy drag-stuff hungry-delete hungry-dele crux benchmark-init monokai-theme dracula-theme emacs-dracula smooth-scroll restart-emacs use-package)))
+   '(flycheck-rust direx rust-mode which-key use-package smooth-scroll restart-emacs monokai-theme lsp-mode jupyter ivy-posframe hungry-delete flycheck drag-stuff dracula-theme crux counsel company benchmark-init ace-window)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight semi-bold :height 120 :width normal)))))

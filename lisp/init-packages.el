@@ -6,10 +6,6 @@
 (use-package smooth-scroll)
 (use-package monokai-theme
   :init (load-theme 'monokai t))
-(use-package emacs
-  :config
-  (setq display-line-numbers-type 'relative)
-  (global-display-line-numbers-mode t))
 (use-package crux
   :bind ("C-k" . crux-smart-kill-line))
 (use-package hungry-delete
@@ -85,10 +81,14 @@
 
 (use-package lsp-mode
   :hook ((lsp-mode / lsp-enable-which-key-integration)
-  (python-mode . lsp-deferred))
+	 (python-mode . lsp-deferred)
+	 (rust-mode . lsp-deferred))
   :commands lsp lsp-deferred)
 
 (use-package jupyter)
+
+(use-package direx
+  :bind (("C-x C-j" . jump-to-project-root)))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
