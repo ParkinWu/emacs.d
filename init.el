@@ -7,6 +7,7 @@
 (require 'init-packages)
 (require 'init-ui)
 (require 'init-rust)
+(require 'init-tex)
 
 (when (file-exists-p custom-file)
   (load-file custom-file))

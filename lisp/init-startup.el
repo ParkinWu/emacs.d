@@ -19,6 +19,7 @@
 (setq font-use-system-font t)
 
 (blink-cursor-mode 1)
+(global-linum-mode t)
 
 (setq inhibit-startup-screen 1)
 (provide 'init-startup)

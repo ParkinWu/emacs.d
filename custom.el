@@ -4,9 +4,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-use-system-font t)
- '(package-selected-packages
-   '(pyim htmlize flycheck-rust direx rust-mode which-key use-package smooth-scroll restart-emacs monokai-theme lsp-mode jupyter ivy-posframe hungry-delete flycheck drag-stuff dracula-theme crux counsel company benchmark-init ace-window)))
+ '(font-use-system-font t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
