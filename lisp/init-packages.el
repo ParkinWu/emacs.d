@@ -90,6 +90,17 @@
 (use-package direx
   :bind (("C-x C-j" . jump-to-project-root)))
 
+(use-package pyim
+  :ensure nil
+  :demand t
+  :config
+  ;; 激活 basedict 拼音词库，五笔用户请继续阅读 README
+  (use-package pyim-basedict
+    :ensure nil
+    :config (pyim-basedict-enable))
+
+  (setq default-input-method "pyim"))
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
