@@ -5,9 +5,10 @@
 
 (setq package-check-signature nil)
 
-(require 'use-package)
+(require 'package)
 
 (unless (bound-and-true-p package--initialized)
+  (setq package-enable-at-startup nil)
   (package-initialize))
 
 (unless package-archive-contents
