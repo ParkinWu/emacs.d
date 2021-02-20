@@ -7,9 +7,12 @@
 (use-package monokai-theme
   :init (load-theme 'monokai t))
 
-(use-package exec-path-from-shell)
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
+;; Settings for exec-path-from-shell
+(use-package exec-path-from-shell
+  :defer nil
+  :if *is-mac*
+  :init (exec-path-from-shell-initialize))
+
 
 (use-package crux
   :bind ("C-k" . crux-smart-kill-line))
