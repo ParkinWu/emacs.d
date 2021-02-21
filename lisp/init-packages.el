@@ -94,7 +94,7 @@
 	 (rust-mode . lsp-deferred))
   :commands lsp lsp-deferred)
 
-(use-package jupyter)
+;;(use-package jupyter)
 
 (use-package direx
   :bind (("C-x C-j" . jump-to-project-root)))
@@ -116,8 +116,7 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t)
-   (jupyter . t)))
+ '((python . t)))
 
 (provide 'init-packages)
 ;;; init-packages.el ends here
