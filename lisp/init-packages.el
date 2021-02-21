@@ -100,6 +100,7 @@
   :bind (("C-x C-j" . jump-to-project-root)))
 
 (use-package pyim
+  :unless *is-mac*
   :ensure nil
   :demand t
   :config
