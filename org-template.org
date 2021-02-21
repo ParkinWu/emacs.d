@@ -1,1 +1,2 @@
 #+LATEX_HEADER: \usepackage{ctex}
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://gongzhitaao.org/orgcss/org.css"/>
