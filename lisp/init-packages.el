@@ -82,6 +82,7 @@
 	(counsel-find-file . ivy-posframe-display-at-frame-center)
 	(ivy-switch-buffer . ivy-posframe-display-at-frame-center)
         (t               . ivy-posframe-display)))
+  (setq ivy-posframe-font my-custom-font)
   (ivy-posframe-mode 1))
 
 (use-package ace-window
@@ -110,6 +111,8 @@
   (setq default-input-method "pyim"))
 
 (use-package htmlize)
+
+(use-package ox-pandoc :defer t :after org)
 
 (org-babel-do-load-languages
  'org-babel-load-languages

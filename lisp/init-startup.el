@@ -16,7 +16,11 @@
 (setq make-backup-files nil
       auto-save-default nil)
 
+(setq my-custom-font "-ADBO-Source Code Pro-semibold-normal-normal-*-18-*-*-*-m-0-iso10646-1")
 (setq font-use-system-font t)
+(set-frame-font my-custom-font)
+
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
 
 (blink-cursor-mode 1)
 (global-linum-mode t)
