@@ -115,9 +115,16 @@
 
 (use-package ox-pandoc :defer t :after org)
 
+(use-package plantuml-mode
+  :init (setq plantuml-jar-path "~/.emacs.d/plantuml.jar"
+	      plantuml-default-exec-mode 'jar
+	      org-plantuml-jar-path "~/.emacs.d/plantuml.jar"))
+
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t)))
+ '((ruby . t)
+   (python . t)
+   (plantuml . t)))
 
 (provide 'init-packages)
 ;;; init-packages.el ends here

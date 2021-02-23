@@ -21,12 +21,18 @@
 (set-frame-font my-custom-font)
 
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
+(setq python-shell-completion-native-enable nil)
+(setq py-python-command "python3")
+(setq python-shell-interpreter "python3")
+(setq elpy-rpc-python-command "python3")
 
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (blink-cursor-mode 1)
 (global-linum-mode t)
+
+(setq org-startup-with-inline-images t)
 
 (setq inhibit-startup-screen 1)
 (provide 'init-startup)
