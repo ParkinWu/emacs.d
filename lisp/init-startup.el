@@ -33,6 +33,7 @@
 (global-linum-mode t)
 
 (setq org-startup-with-inline-images t)
+(setq org-confirm-babel-evaluate nil)
 
 (setq inhibit-startup-screen 1)
 (provide 'init-startup)
