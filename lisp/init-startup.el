@@ -34,6 +34,12 @@
 
 (setq org-startup-with-inline-images t)
 (setq org-confirm-babel-evaluate nil)
+(defun shk-fix-inline-images ()
+  (when org-inline-image-overlays
+    (org-redisplay-inline-images)))
+
+(with-eval-after-load 'org
+  (add-hook 'org-babel-after-execute-hook 'shk-fix-inline-images))
 
 (setq inhibit-startup-screen 1)
 (provide 'init-startup)
